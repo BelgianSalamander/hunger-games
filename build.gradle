@@ -1,0 +1,41 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '7.0.0'
+    id 'java'
+}
+
+group 'me.salamander'
+version '0.1-SNAPSHOT'
+
+sourceSets{
+    main{
+        java{
+            srcDirs = ['src/main/java', 'src/main/resources']
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies{
+    implementation "com.fasterxml.jackson.core:jackson-databind:2.6.3"
+    implementation "org.jetbrains:annotations:16.0.2"
+}
+
+jar{
+    manifest{
+        attributes(
+                'Class-Path': ' ',
+                'Main-Class': 'hungergames.HungerGames'
+        )
+    }
+}
+
+task runJar(type : JavaExec){
+    classpath = files('build/libs/Hunger Games-' + version + '-all.jar')
+    classpath += sourceSets.main.runtimeClasspath
+    main = 'hungergames.HungerGames'
+}
+
+runJar.dependsOn shadowJar

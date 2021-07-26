@@ -1,0 +1,124 @@
+[
+  {
+    "names": ["dagger", "sais", "handaxe"],
+    "weight": 5.0,
+    "melee": 1.0,
+    "ranged": 1.0,
+    "intelligence": 0.1,
+    "hit": [
+      "{attackerName} {select(dagger)} {victimName} with a {weaponName}",
+      "{attackerName} {select(dagger)} {victimName}"
+    ],
+    "miss": [
+      "{attackerName} threw their {weaponName} at {victimName} but they missed",
+      "{attackerName} tried {select(dagger_infinitive)} {victimName}"
+    ]
+  },
+  {
+    "names": ["bomb", "explosive"],
+    "weight": 2.0,
+    "melee": 0.0,
+    "ranged": 0.0,
+    "intelligence": 3.0,
+    "hit": [
+      "{attackerName} blew {victimName} up",
+      "{attackerName} blew {victimName} up with their {weaponName}"
+    ],
+    "miss": [
+      "{attackerName} threw their {weaponName} at victim but it didn't explode!",
+      "{attackerName} tried to blow {victimName} up"
+    ]
+  },
+  {
+    "names": ["bow","longbow","crossbow","shortbow","AK-47"],
+    "weight": 1.0,
+    "melee": 0.0,
+    "ranged": 2.0,
+    "intelligence": 1.0,
+    "hit": [
+      "{attackerName} shot {victimName} with their {weaponName}",
+      "{victimName} was shot in the {select(vital_body_parts)} by {attackerName}"
+    ],
+    "miss": [
+      "{attackerName} shot {victimName}'s arm but they did not die",
+      "{victimName} was nearly hit by {attackerName}'s arrow"
+    ]
+  },
+  {
+    "names": ["quarterstaff", "staff", "stick", "club", "baton"],
+    "weight": 4.0,
+    "melee": 1.0,
+    "ranged": 0.0,
+    "intelligence": 0.2,
+    "hit": [
+      "{attackerName} hit {victimName} to death",
+      "{victimName} was whacked by {attackerName}'s {weaponName}"
+    ],
+    "miss": [
+      "{attackerName} tried to whack {victimName} with their {weaponName}",
+      "{attackerName} did not manage to hit {victimName}"
+    ]
+  },
+  {
+    "names": ["net"],
+    "weight": 3.0,
+    "melee": 1.0,
+    "ranged": 0.5,
+    "intelligence": 1.0,
+    "hit": [
+      "{attackerName} trapped {victimName} using a net and killed them",
+      "{attackerName} threw their net onto {victimName} and killed them"
+    ],
+    "miss": [
+      "{attackerName} trapped {victimName} in their net but they escaped",
+      "{victimName} crawled out of {attackerName}'s net"
+    ]
+  },
+  {
+    "names": ["spear","javelin","trident"],
+    "weight": 3.0,
+    "melee": 0.5,
+    "ranged": 2.0,
+    "intelligence": 0.0,
+    "hit":[
+      "{attackerName} threw their {weaponName} at {victimName}",
+      "{attackerName} stabbed {victimName} with their {weaponName}"
+    ],
+    "miss":[
+      "{attackerName} grazed {victimName}'s {select(body)}",
+      "{attackerName} threw their {weaponName} at {victimName} but they dodged it"
+    ]
+  },
+  {
+    "names": ["sword","longsword","shortsword","rapier","great axe", "great sword", "mace"],
+    "weight": 3.0,
+    "melee": 2.0,
+    "ranged": 0.0,
+    "intelligence": 1.0,
+    "hit": [
+      "{attackerName} {select(sword)} {victimName} with a {weaponName}",
+      "{victimName} was {select(sword)} by {attackerName}",
+      "{attackerName} waited for {victimName} to pass by and then {select(sword)} them",
+      "{victimName} unsuccessfully {select(sword)} {attackerName}, and gets {select(sword)} by them instead"
+    ],
+    "miss": [
+      "{attackerName} unsuccesfully {select(sword)} {victimName}",
+      "{victimName} was nearly {select(sword)} by {attackerName}"
+    ]
+  },
+  {
+    "names": ["poisonous berries", "arsenic", "cyanide", "amatoxin"],
+    "weight": 1.0,
+    "melee": 0.0,
+    "ranged": 0.0,
+    "intelligence": 3.0,
+    "hit": [
+      "{attackerName} poisoned {victimName} with {weaponName}",
+      "{attackerName} forced {weaponName} down {victimName}'s throat"
+    ],
+    "miss": [
+      "{victimName} ingested {attackerName}'s {weaponName} but survived",
+      "{victimName} did not eat {attackerName}'s {weaponName}"
+    ]
+  }
+]

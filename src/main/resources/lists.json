@@ -1,0 +1,21 @@
+{
+  "dagger": ["stabbed", "hit", "whacked", "decapitated"],
+  "dagger_infinitive": ["to stab", "to hit", "to whack", "to decapitate"],
+
+  "hands":["yeeted", "punched", "hit", "pogged"],
+  "hands_infinitive": ["to yeet", "to punch", "to hit", "to pog"],
+
+  "sword": ["sliced", "stabbed", "impaled", "killed", "defeated", "murdered", "decapitated", "beheaded", "tortured", "surprised"],
+  "explode": ["dismembered", "blown up", "exploded", "yeeted"],
+  "body": ["right leg", "left leg", "clavicle", "hip", "ankles", "nose", "collar bone", "neck", "wrist", "hands", "finger"],
+
+  "color": ["red", "green", "blue", "orange", "yellow", "purple"],
+  "vegetable": ["potato", "tomato", "carrot"],
+
+  "dream" : [
+    "{dreamer} {select(to_dream)} their {select(body)}",
+    "{dreamer} {select(to_dream)} about getting {select(explode)} by {select(dream_subject)}"
+  ],
+  "to_dream" : ["has a dream about", "dreams of"],
+  "dream_subject": ["{inDream}", "a {select(color)} {select(vegetable)}", "a {select(vegetable)}"]
+}

@@ -1,0 +1,20 @@
+{
+  "name" : "Big Battle",
+  "players": [
+    {"name": "Jerry"},
+    {"name": "John"},
+    {"name": "James"},
+    {"name": "Eva"},
+    {"name": "Greg"},
+    {"name": "Serge"},
+    {"name": "Billy"},
+    {"name": "Tim Cook"},
+    {"name": "Charlie"},
+    {
+      "name": "Ada Lovelace",
+      "intelligence": 10000000.0
+    },
+    {"name": "Warwick"},
+    "Saruman"
+  ]
+}
